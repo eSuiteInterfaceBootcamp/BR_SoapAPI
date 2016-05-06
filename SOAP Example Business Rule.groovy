@@ -54,7 +54,7 @@ dlNumber.saveOrUpdate();
 
 // create the traffic newTicket case
 Case newCase = new Case();
-newCase.caseNumber = soapResponse.getNewTicketsResponse.getNewTicketsResult.Ticket[0].TicketID[0];
+newCase.caseNumber = soapResponse.getNewTicketsResponse.getNewTicketsResult.Ticket[0].TicketNumber[0];
 newCase.caseType = "TRAFFIC";
 newCase.saveOrUpdate();
 
